@@ -1,4 +1,3 @@
-package base64;
 import java.util.Base64;
 
 public class Base64Demo {

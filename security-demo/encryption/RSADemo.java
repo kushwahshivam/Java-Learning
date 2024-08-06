@@ -1,5 +1,3 @@
-package encryption;
-
 import javax.crypto.Cipher;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
