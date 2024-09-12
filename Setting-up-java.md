@@ -120,11 +120,34 @@ sudo update-alternatives --config java
 sudo update-alternatives --config javac
 ```
 
+## 6. Installation Fixes
+
+If you encounter issues during installation, here are some common fixes:
+
+- **Missing Dependencies**: If you see errors about missing dependencies, run:
+
+```bash
+sudo apt --fix-broken install
+```
+- **Permission Issues**: If you encounter permission errors, ensure you are using sudo for commands that require administrative rights.
+
+- **Repository Issues**: If a package is not found, you might need to add the repository manually. For example, for OpenJDK 22, ensure you have the appropriate repository added, or use the manual download method as shown above.
+
+- **Environment Variable Not Set**: If `JAVA_HOME` is not recognized, verify the path is correct and that the file you edited is sourced correctly:
+
+```bash
+echo $JAVA_HOME
+```
+
+Ensure it prints the path to your JDK installation.
+
+- **Update Alternatives Error**: If you encounter errors with `update-alternatives`, check that the paths specified match the actual JDK installation paths. For example, verify the `bin/java` and `bin/javac` paths exist in your JDK directory. For more detail check out my another repository [here](https://github.com/MasterHardik/Java-Learning/blob/main/Switching_java_versions.md).
+
 ## Conclusion
 
 You have now set up and configured multiple JDK versions on your Ubuntu system. You can switch between different versions as needed and set `JAVA_HOME` to point to the version you are currently using.
 
-For more information, visit the [OpenJDK website](https://openjdk.java.net/) or the [Ubuntu documentation](https://help.ubuntu.com/). For more detailed instructions on switching between Java versions, check out my another repository [here](https://github.com/MasterHardik/Java-Learning/blob/main/Switching_java_versions.md).
+For more information, visit the [OpenJDK website](https://openjdk.java.net/) or the [Ubuntu documentation](https://help.ubuntu.com/). For more detailed instructions on switching between Java versions.
 
 
 
