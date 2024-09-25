@@ -42,7 +42,6 @@ Is there a way (system/modus/tool) to determine the system's capabilities regard
 
 ## Resources for Further Reading
 
-- "Java Concurrency in Practice" for insights on thread management.
 - Research on Amdahl's Law for understanding parallel processing limits.
 - Consider using profiling tools specific to your development environment to measure performance and thread efficiency.
 
