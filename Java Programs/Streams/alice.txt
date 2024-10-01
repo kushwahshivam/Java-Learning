@@ -1,0 +1,2 @@
+This is text file.
+Will be read by the java program the stream's
