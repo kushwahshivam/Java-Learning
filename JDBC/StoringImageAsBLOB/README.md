@@ -43,11 +43,12 @@ To insert an image into the database, use the `InsertImgInDB.java` file.
 
 ### Modifications Needed
 
-1. **Update Database Credentials:** In the `InsertImgInDB.java` file, modify the following lines with your MySQL username and password:
+1. **Update Database Credentials:** In the `database.properties` file, modify the following lines with your MySQL username and password:
 
-    ```java
-    String username = "your_username";  // e.g., "root"
-    String password = "your_password";  // e.g., "123456"
+    ```properties
+    db.url=jdbc:mysql://localhost:3306/[database_name]
+    db.username=[user_name]
+    db.password=[password]
     ```
 2. **Update ISBN and Image Path:**
 

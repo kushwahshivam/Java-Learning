@@ -1,14 +1,25 @@
 import java.sql.*;
 import java.io.*;
+import java.util.Properties;
 
 public class InsertImgInDB {
     public static void main(String[] args) {
         Connection conn = null;
         PreparedStatement pstmt = null;
+        Properties properties = new Properties();
 
-        String dbURL = "jdbc:mysql://localhost:3306/test_db_02";
-        String username = "root";
-        String password = "123456";
+        // Load database properties
+        try (InputStream input = new FileInputStream("database.properties")) {
+            properties.load(input);
+        } catch (IOException ex) {
+            System.out.println("Unable to load database properties file.");
+            ex.printStackTrace();
+            return;
+        }
+
+        String dbURL = properties.getProperty("db.url");
+        String username = properties.getProperty("db.username");
+        String password = properties.getProperty("db.password");
 
         try {
             // Load MySQL JDBC Driver
