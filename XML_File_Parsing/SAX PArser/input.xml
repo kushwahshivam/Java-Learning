@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <bscore>85</bscore>
+    </student>
+    <student>
+        <firstName>Jane</firstName>
+        <lastName>Smith</lastName>
+        <bscore>92</bscore>
+    </student>
+    <student>
+        <firstName>Emily</firstName>
+        <lastName>Johnson</lastName>
+        <bscore>78</bscore>
+    </student>
+</students>
