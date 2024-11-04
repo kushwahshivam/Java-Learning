@@ -14,3 +14,19 @@ public class TryWithResource {
         }
     }
 }
+
+
+
+/***
+ * Suppressed Exceptions
+ * If a try block throws an exception and one or more exceptions are thrown by
+ * the try-with-resources, the exceptions thrown by try-with-resources are
+ * suppressed. In other words, we can say, exceptions which are thrown by
+ * try-with-resources are suppressed exceptions.
+ * 
+ * You can get these exceptions by using the getSuppress() method of Throwable
+ * class.
+ * 
+ * Java added a new constructor and two new methods in Throwable class to deal
+ * with suppressed exceptions.
+ */
