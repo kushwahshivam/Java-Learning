@@ -156,4 +156,20 @@ JUnit is a foundational testing tool for Java developers that supports writing a
 
 Mastering JUnit will boost your productivity and confidence in your Java projects.
 
+## 💡 Want to Try This Hands-On?
+
+Explore the working example project directly on GitHub:
+
+🔗 [**JUnit with demo project**](https://github.com/MasterHardik/Java-Learning/tree/main/Software%20Testing/JUnit%20with%20demo%20project)
+
+It includes:
+
+- ✅ JUnit 4 & JUnit 5 usage  
+- 🔁 Parameterized tests  
+- ♻️ Lifecycle methods (`@BeforeEach`, `@AfterEach`, etc.)  
+- 🧪 Assertion examples (`assertEquals`, `assertThrows`, etc.)  
+- 🛠 Maven project setup with standard structure
+
+Perfect to practice everything from this guide and start building your testing confidence!
+
 — Hardik Chouhan
